@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/setHomeSetFav.js" ></script>
+		<script type="text/javascript" src="js/myfocus-2.0.1.min.js" ></script>
+		<script type="text/javascript" src="js/mf-pattern/mF_YSlider.js" ></script>
+		<link rel="stylesheet" href="js/mf-pattern/mF_YSlider.css" />
+		<script type="text/javascript">
+			myFocus.set({
+				id:'picBox'
+			});
+		</script>
+	</head>
+	<body>
+	<!--top区域-->
+		<div class="top">
+			<div class="top_content">
+				<ul>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+					<li><a href="#" onclick="SetHome(window.location)">设为主页</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	<!--wrap区域-->
+		<div class="wrap">
+		<!--logo-->
+			<div class="logo">
+			<!--分别分为左右两部分class-->
+				<div class="logo_left">
+					<img src="img/logo.jpg" alt="慕课网"/>
+				</div>
+				<div class="logo_right">
+					<img src="img/tel.jpg" alt="服务在线" />24小时服务在线:<div class="tel">123-456-7890</div>
+				</div>
+			</div>
+		
+	
+		<!--nav区域 (导航)-->
+			<div class="nav">
+				<!--nav_mid部分-->
+				<div class="nav_mid">
+					<div class="mid_left">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="list.html">关于慕课</a></li>
+							<li><a href="list.html">新闻动态</a></li>
+							<li><a href="list.html">课程中心</a></li>
+							<li><a href="list.html">在线课程</a></li>
+							<li><a href="list.html">人才招聘</a></li>
+						</ul>
+					</div>
+					<div class="mid_right">
+						<form action="" method="post">
+							<input type="text" class="search_text"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		
+			<!--ad_广告焦点轮播图-->
+			<div class="ad" id="picBox" style="height: 243px;">
+				<img src="img/ad.jpg" />
+			</div>
+
+			<div class="list_main">
+				<!--新闻列表news_type-->
+				<div class="news_type">
+					<h2>新闻中心</h2>
+					<!--新闻中心内容-->
+					<div class="new_type_content">
+						<ul>
+							<li><a href="list.html">公司新闻</a></li>
+							<li><a href="list.html">行业新闻</a></li>
+							<li><a href="list.html">媒体报道</a></li>
+							<li><a href="list.html">活动专题</a></li>
+							<li><a href="list.html">精彩视频</a></li>
+							<li><a href="list.html">资源下载</a></li>
+							<li><a href="list.html">公司周刊</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--列表盒子list_box-->
+				<div class="list_box">
+					<h2>新闻中心</h2>
+					<h1>【有奖活动】给父亲的三行情书</h1>
+					<p class="list_box_newsInfo">发布人：Admin  发布时间：2014-06-01 浏览：32180次</p>
+					
+					<div class="list_box_newsContent">
+						<p>父亲这个角色，都说“父爱如山”，可是我们对父亲的爱意却始终说不出口。在离2014年“父亲节”不到一个月的时间里，水母网与山东恩来得科技保健公司共同发起“送给父亲的三行情书”活动，把对父亲无法言表的爱写出来。
+　　情侣间，耳鬓厮磨之际便会涌出绵绵情话；对母亲，娇憨之时便会说出“我爱你”三个字。我们已经见惯了经典的情诗，而对于父亲却只把那份爱、那份感激深埋的心底。古人云：“子欲养而亲不待。”对父亲的爱就大声地说出来吧，毋须多言，“三行情书”足矣，用最简单的语言传递最真实的感情。</p>
+						<p><strong>活动题目：</strong><u>给父亲大人的三行情书</u></p>
+						<p><strong>活动时间：</strong>6月6日&mdash;&mdash;6月16日(17日公布获奖名单)</p>
+						<p align="center"><img src="img/news1.jpg" width="500" height="360px" alt="活动海报" /></p>
+						<p><strong>活动内容：</strong>活动内容结合时下流行的&ldquo;三行体&rdquo;来给父亲表达感谢之情。具体内容不限，可以是诗歌、散文或其他。</p>
+						<p><strong>活动题目：</strong><u>给父亲大人的三行情书</u></p>
+						<p><strong>活动时间：</strong>6月6日&mdash;&mdash;6月16日(17日公布获奖名单)</p>
+						<p align="center"><img src="img/news2.jpg" width="500" height="360px" alt="活动海报" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部版权制作copyright-->
+		<div class="copyright">
+			<div class="copyright_content">
+				<ul>
+					<li><a href="#">关于</a>
+						<ul>
+							<li><a href="#">品牌故事</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">版权声明</a></li>
+						</ul>
+					</li>
+					<li><a href="#">课程</a>
+						<ul>
+							<li><a href="#">品牌故事</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">版权声明</a></li>
+						</ul>
+					</li>
+					<li><a href="#">留言</a>
+						<ul>
+							<li><a href="#">腾讯微博</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">企业微信</a></li>
+							<li><a href="#">QQ空间</a></li>
+						</ul>
+					</li>
+					<li><a href="#">关注</a>
+						<ul>
+							<li><a href="#">意见反馈</a></li>
+							<li><a href="#">问题留言</a></li>
+							<li><a href="#">媒体联络</a></li>
+							<li><a href="#">在线客服</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><img src="img/weixin.png">微信关注</a>
+						<ul>
+							<li><img src="img/qrcode.jpg" /></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
